@@ -60,7 +60,43 @@
     });
     </script>
     <!-- END DEBUG CODE -->
-    
+        <!-- ADDITIONAL DEBUG CODE -->
+    <script>
+    // Additional debug: Check ClickMagic script
+    window.addEventListener('load', function() {
+        console.log('Page fully loaded');
+        
+        // Check if ClickMagic global object exists
+        if (typeof window.ClickMagick !== 'undefined') {
+            console.log('✅ ClickMagick global object exists');
+            console.log('ClickMagick version:', window.ClickMagick.version || 'unknown');
+        } else {
+            console.log('❌ ClickMagick global object NOT found');
+        }
+        
+        // Check if cmc script loaded
+        var scripts = document.getElementsByTagName('script');
+        var cmcLoaded = false;
+        for (var i = 0; i < scripts.length; i++) {
+            if (scripts[i].src && scripts[i].src.includes('clkmc.com/cmc.js')) {
+                cmcLoaded = true;
+                console.log('✅ CMC script found in DOM');
+                break;
+            }
+        }
+        if (!cmcLoaded) {
+            console.log('❌ CMC script NOT found in DOM');
+        }
+        
+        // Check ClickMagic configuration
+        if (typeof window.clickmagick_cmc !== 'undefined') {
+            console.log('✅ ClickMagic config exists:', window.clickmagick_cmc);
+        } else {
+            console.log('❌ ClickMagic config NOT found');
+        }
+    });
+    </script>
+    <!-- END ADDITIONAL DEBUG CODE -->
     <title>The Mitochondria Secret That Changed Everything</title>
     <style>
         * {
