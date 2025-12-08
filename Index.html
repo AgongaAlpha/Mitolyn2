@@ -36,67 +36,6 @@
     </script>
     <script src='//cdn.clkmc.com/cmc.js'></script>
     <!-- END CLICKMAGIC CODE -->
-    
-    <!-- DEBUG CODE - ADDED HERE -->
-    <script>
-    // Debug: Check ClickMagic click interception
-    document.addEventListener('DOMContentLoaded', function() {
-        console.log('DOM loaded - checking ClickMagic links');
-        
-        // Check all CTA buttons
-        var ctaButtons = document.querySelectorAll('.cta-button');
-        console.log('Found', ctaButtons.length, 'CTA buttons');
-        
-        // Check what href they have
-        ctaButtons.forEach(function(button, index) {
-            console.log('Button', index + 1, 'href:', button.href);
-            
-            // Check if ClickMagic is intercepting clicks
-            button.addEventListener('click', function(e) {
-                console.log('Button clicked! Current href:', this.href);
-                console.log('ClickMagic should intercept this...');
-            }, false);
-        });
-    });
-    </script>
-    <!-- END DEBUG CODE -->
-        <!-- ADDITIONAL DEBUG CODE -->
-    <script>
-    // Additional debug: Check ClickMagic script
-    window.addEventListener('load', function() {
-        console.log('Page fully loaded');
-        
-        // Check if ClickMagic global object exists
-        if (typeof window.ClickMagick !== 'undefined') {
-            console.log('✅ ClickMagick global object exists');
-            console.log('ClickMagick version:', window.ClickMagick.version || 'unknown');
-        } else {
-            console.log('❌ ClickMagick global object NOT found');
-        }
-        
-        // Check if cmc script loaded
-        var scripts = document.getElementsByTagName('script');
-        var cmcLoaded = false;
-        for (var i = 0; i < scripts.length; i++) {
-            if (scripts[i].src && scripts[i].src.includes('clkmc.com/cmc.js')) {
-                cmcLoaded = true;
-                console.log('✅ CMC script found in DOM');
-                break;
-            }
-        }
-        if (!cmcLoaded) {
-            console.log('❌ CMC script NOT found in DOM');
-        }
-        
-        // Check ClickMagic configuration
-        if (typeof window.clickmagick_cmc !== 'undefined') {
-            console.log('✅ ClickMagic config exists:', window.clickmagick_cmc);
-        } else {
-            console.log('❌ ClickMagic config NOT found');
-        }
-    });
-    </script>
-    <!-- END ADDITIONAL DEBUG CODE -->
     <title>The Mitochondria Secret That Changed Everything</title>
     <style>
         * {
@@ -360,7 +299,7 @@
                 </div>
             </div>
             
-            <a href="https://www.clkmg.com/onchwarinyaribobonfa/linkSlug" class="cta-button">
+            <a href="https://5e0dctneg5tdds09qq-j3m0oa4.hop.clickbank.net?tid=[cmc_vid]" class="cta-button">
                 🔥 Discover How Mitolyn Works →
             </a>
             
@@ -379,7 +318,7 @@
                 Every bottle comes with an iron-clad 90-day guarantee. If the results aren't astonishing, simply return it for a full refund — no questions asked.
             </div>
             
-            <a href="https://www.clkmg.com/onchwarinyaribobonfa/linkSlug" class="cta-button">
+            <a href="https://5e0dctneg5tdds09qq-j3m0oa4.hop.clickbank.net?tid=[cmc_vid]" class="cta-button">
                 ⚡ See The Full Presentation Now →
             </a>
         </div>
